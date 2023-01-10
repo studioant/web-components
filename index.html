@@ -7,8 +7,21 @@
     <title>Web Components</title>
   </head>
   <body>
-    <h3>Hello</h3>
-    <user-card></user-card>
+    <user-card
+      name="John Doe"
+      avatar="https://randomuser.me/api/portraits/men/1.jpg"
+    >
+      <div slot="email">johndoe@email.com</div>
+      <div slot="phone">123456789</div>
+    </user-card>
+
+    <user-card
+      name="Jane Doe"
+      avatar="https://randomuser.me/api/portraits/women/10.jpg"
+    >
+      <div slot="email">janedoe@email.com</div>
+      <div slot="phone">12356789</div>
+    </user-card>
     <script src="userCard.js"></script>
   </body>
 </html>
